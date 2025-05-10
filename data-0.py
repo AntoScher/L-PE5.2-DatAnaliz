@@ -62,3 +62,6 @@ doc_views = doc_views.drop(columns='last_name')
 print(doc_views.duplicated().sum())
 payments = payments.drop_duplicates()
 print(payments.duplicated().sum())
+
+doc_views.to_csv('doc_views_result.csv',index=False)
+payments.to_csv('payments_result.csv',index=False)
