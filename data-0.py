@@ -1,6 +1,4 @@
 import hashlib
-import matplotlib.pyplot as plt  # Рекомендуется использовать общепринятое название переменной "plt"
-#import numpy as np
 import pandas as pd
 
 doc_views = pd.read_csv('doc_views.csv')
@@ -9,7 +7,8 @@ payments = pd.read_excel('case_data.xlsx', sheet_name='Payments')
 #print(payments.head())
 #print(payments.tail(10))
 # Изменяем настройки отображения для полного вывода
-"""pd.set_option('display.max_rows', None)       # Показывать все строки
+"""
+pd.set_option('display.max_rows', None)       # Показывать все строки
 pd.set_option('display.max_columns', None)    # Показывать все столбцы
 pd.set_option('display.width', None)          # Не ограничивать ширину отображения
 pd.set_option('display.max_colwidth', None)     # Не обрезать содержимое столбцов
